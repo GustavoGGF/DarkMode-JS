@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  background: #eceff1;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bi {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.bi-moon {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eceff1;
+  box-shadow: 0.5px 0.5px 10px 0.5px #000;
+  position: relative;
+  padding: 1em 2em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 4em;
+  display: flex;
+  width: 60%;
+  position: relative;
+  background: rgb(224, 212, 212);
+  box-sizing: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  height: 500px;
+}
+
+.card-image,
+.card-details {
+  padding: 2em;
+  width: 50%;
+}
+
+.card-image {
+  position: relative;
+  background: #d8d8d8;
+  border-radius: 20px;
+}
+
+.card-image span {
+  font-size: 6em;
+  font-weight: 900;
+  background: #d8d8d8;
+}
+
+.card img {
+  transform: rotate(-5deg);
+  position: absolute;
+  right: 5em;
+  top: 8em;
+}
+
+.card-details h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.subtitle {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.description {
+  line-height: 1.3em;
+  margin-bottom: 10em;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.btn {
+  background-color: #444;
+  width: 7em;
+  height: 3em;
+  border: none;
+  border-radius: 3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Dark Theme */
+.dark,
+.dark header {
+  background-color: #201b2c;
+  color: #fff;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .card {
+  background: #37474f;
+}
+
+.dark .card-image {
+  background: #273035;
+}
+
+.dark .card-image span {
+  background: #273035;
+}
+
+.dark .subtitle {
+  color: #67b4f3;
+}
+
+.dark .description {
+  color: #2193f6;
+}
+
+.dark .btn {
+  margin-top: px;
+  background: #2193f6;
+}
